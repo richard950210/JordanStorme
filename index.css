@@ -40,11 +40,65 @@ h1 {
     font-size: 7vw; /* Set a base font size */
 
 }
+/* Media Query for screens smaller than 768px (tablets and mobile devices) */
 @media screen and (max-width: 768px) {
-    .h1 {
-        font-size: 3vw; /* Reduce font size for smaller screens */
+    h1 {
+        font-size: 5vw; /* Scale down the header */
+    }
+
+    .box {
+        flex: 1 0 100%; /* Make each box take full width on small screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .bigbox1, .bigbox2, .bigbox3 {
+        width: 100%; /* Make the boxes fill the screen width */
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+.full-width {
+    position: absolute; /* Position the image absolutely within the parent */
+    top: 0; /* Position the image at the top */
+    left: 0; /* Position the image at the left */
+    width: 100%; /* Make the image width 100% of its parent container */
+    height: auto; /* Allow the image height to scale */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    opacity: 0.7; /* Set transparency for the image */
+    z-index: -1; /* Ensure the image is behind other content */
+}
+
+
+    .container-clock .countdown-box {
+        width: 45px; /* Shrink the countdown boxes */
+        height: 45px;
+    }
+
+    .countdown-item {
+        font-size: 5vw; /* Smaller text for countdown numbers */
+    }
+
+    .countdown-label {
+        font-size: 12px;
     }
 }
+
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 4vw; /* Adjust further for mobile phones */
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .date {
+        font-size: 4vw;
+    }
+}
+
+
 
 /*Small Container*/
 .container {
@@ -53,18 +107,6 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 10px;
-}
-
-
-.full-width {
-    position: absolute; /* Position the image absolutely within the parent */
-    top: 0; /* Position the image at the top */
-    left: 0; /* Position the image at the left */
-    width: 100%; /* Make the image width 100% of its parent container */
-    height: 100%; /* Make the image height 100% of its parent container */
-    object-fit: cover; /* Scale the image while preserving its aspect ratio to cover the entire container */
-    opacity: 0.7; /* Set transparency for the image */
-    z-index: -1; /* Ensure the image is behind other content */
 }
 
 .box {
@@ -240,3 +282,17 @@ h1 {
     background-repeat: no-repeat; /* Do not repeat the background image */
     z-index: 0; /* Ensure the background image is behind other content */
 }
+
+img {
+    width: 100%; /* Ensure the image width scales to fit its container */
+    height: auto; /* Allow height to adjust proportionally */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.full-width {
+    width: 100%;
+    height: auto; /* Adjust for smaller screens */
+}
+
+
+
