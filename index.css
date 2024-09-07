@@ -1,45 +1,42 @@
 body {
     overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
-body {
-	font-family: Arial, sans-serif;
-	background-color: #050505;
-	padding: 0px;
-	margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #050505;
+    padding: 0;
+    margin: 0;
 }
 
 .section:nth-child(1) {
-	background-image: url("Wedding E-RSVP/Front 1.jpg");
-	background-size: cover;
-	background-position: center;
+    background-image: url("Wedding E-RSVP/Front 1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .section:nth-child(2) {
-	background-image: url("image2.jpg");
-	background-size: cover;
-	background-position: center;
+    background-image: url("image2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .section:nth-child(3) {
-	background-image: url("image3.jpg");
-	background-size: cover;
-	background-position: center;
+    background-image: url("image3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-/*Jordan And Amdrea Storme's Special Day*/
+/* Jordan And Andrea Storme's Special Day */
 h1 {
-	text-align: center;
-	color: #ffffff;
-	margin-bottom: 0px;
-    margin-top: 0px;
-    font-family: 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico',  'Lobster Two', 'Dancing Script', Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico', 'Lobster Two', 'Dancing Script', Arial, sans-serif;
     white-space: nowrap; /* Prevent wrapping of text */
     overflow: hidden; /* Hide any overflow text */
     text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
     font-size: 7vw; /* Set a base font size */
-
 }
+
 /* Media Query for screens smaller than 768px (tablets and mobile devices) */
 @media screen and (max-width: 768px) {
     h1 {
@@ -55,19 +52,8 @@ h1 {
         width: 100%; /* Make the boxes fill the screen width */
         padding: 10px;
         margin: 10px auto;
+        height: auto; /* Allow the height to adjust naturally */
     }
-
-.full-width {
-    position: absolute; /* Position the image absolutely within the parent */
-    top: 0; /* Position the image at the top */
-    left: 0; /* Position the image at the left */
-    width: 100%; /* Make the image width 100% of its parent container */
-    height: auto; /* Allow the image height to scale */
-    object-fit: cover; /* Ensure the image covers the entire container */
-    opacity: 0.7; /* Set transparency for the image */
-    z-index: -1; /* Ensure the image is behind other content */
-}
-
 
     .container-clock .countdown-box {
         width: 45px; /* Shrink the countdown boxes */
@@ -83,7 +69,6 @@ h1 {
     }
 }
 
-
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 4vw; /* Adjust further for mobile phones */
@@ -98,95 +83,112 @@ h1 {
     }
 }
 
-
-
-/*Small Container*/
+/* Small Container */
 .container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Consolidated full-width class */
+.full-width {
+    position: absolute; /* Position the image absolutely within the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure full container height */
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+    opacity: 0.7; /* Set transparency for the image */
+    z-index: -1; /* Ensure the image is behind other content */
 }
 
 .box {
-	flex: 1 0 45%;
-	background-color: rgba(255, 255, 255, 0);
-	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0);
-	padding: 20px;
-	margin: 20px;
-	text-align: center;
-	border-radius: 20px;
+    flex: 1 0 45%;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
 }
+
 .box .left1 {
-	float: left;
-	width: 100%;
-	margin-right: 5%;
+    float: left;
+    width: 100%;
+    margin-right: 5%;
 }
+
 .box .right {
-	float: right;
-	width: 100%;
+    float: right;
+    width: 100%;
 }
+
 .box h2 {
-	margin-top: 0;
-	margin-bottom: 20px;
-	color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #000000;
 }
+
 .box p {
-	margin: 0;
-	font-size: 18px;
-	line-height: 1.5;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
 }
+
 .box i {
-	font-size: 36px;
-	color: #ffffff;
-	margin-bottom: 20px;
-	display: block;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
 }
+
 .box .countdown {
-	font-size: 48px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	display: block;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
 }
+
 .box .date {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
 }
+
 .box .address {
-	font-size: 18px;
-	margin-bottom: 20px;
-	display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
 }
+
 .box .map {
-	width: 100%;
-	height: 200px;
-	border: 1px solid #ccc;
-	margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
-/*First Big Box Section*/
+/* First Big Box Section */
 .bigbox1 {
-
     padding: 10px;
     margin: 20px auto;
     text-align: center;
-    width: 90%; /* Ensure the div fills its parent container */
-    height: 100%; /* Ensure the div fills its parent container */
-    position: relative; /* Ensure positioning context for absolutely positioned children */
-    overflow: hidden; /* Hide any overflow content */
-    border-radius: 20px; /* Add curved edges */
-    background-image: url('/img/Front_10.png'); /* Set the background image */
-    background-size: cover; /* Cover the entire box with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    z-index: 0; /* Ensure the background image is behind other content */
+    width: 90%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('/img/Front_10.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
-
-/*Countdown CSS Section*/
+/* Countdown CSS Section */
 .container-clock {
     display: flex;
     justify-content: space-around;
@@ -196,10 +198,10 @@ h1 {
 
 .countdown-box {
     text-align: center;
-    border: 2px solid #CB6843; /* Add a solid border with color */
-    border-radius: 10px; /* Add rounded corners */
-    padding: 10px; /* Add some padding inside the box */
-    margin: 5px; /* Add some margin around the box */
+    border: 2px solid #CB6843;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
 }
 
 .countdown-item {
@@ -213,7 +215,7 @@ h1 {
     color: #000000;
 }
 
-/*Background Pictures*/
+/* Background Pictures */
 .background-sections {
     position: relative;
     width: 100%;
@@ -226,73 +228,60 @@ h1 {
 
 .bottom-section {
     z-index: -1; /* Ensure the bottom section is behind other content */
-	opacity: 0.7;
+    opacity: 0.7;
 }
 
-
-/*Story Section*/
+/* Story Section */
 .bigbox2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-	margin: 20px auto;
+    margin: 20px auto;
     text-align: center;
-    width: 90%; /* Ensure the div fills its parent container */
-    height: 100%; /* Ensure the div fills its parent container */
-    position: relative; /* Ensure positioning context for absolutely positioned children */
-    overflow: hidden; /* Hide any overflow content */
-    border-radius: 20px; /* Add curved edges */
-    background-image: url('/img/J&S_bg_020.png'); /* Set the background image */
-    background-size: cover; /* Cover the entire box with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    z-index: 0; /* Ensure the background image is behind other content */
+    width: 90%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('/img/J&S_bg_020.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
-
 
 .section {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    max-width: 1200px; /* Optional: Set a max width for the section */
-	flex: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	margin: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
 }
 
-/*RSVP Section*/
-
+/* RSVP Section */
 .bigbox3 {
-
     padding: 10px;
     margin: 20px auto;
     text-align: center;
-    width: 90%; /* Ensure the div fills its parent container */
-    height: 100%; /* Ensure the div fills its parent container */
-    position: relative; /* Ensure positioning context for absolutely positioned children */
-    overflow: hidden; /* Hide any overflow content */
-    border-radius: 20px; /* Add curved edges */
-    background-image: url('/img/J&S_bg_030.png'); /* Set the background image */
-    background-size: cover; /* Cover the entire box with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    z-index: 0; /* Ensure the background image is behind other content */
+    width: 90%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('/img/J&S_bg_030.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
+/* Image Styles */
 img {
     width: 100%; /* Ensure the image width scales to fit its container */
     height: auto; /* Allow height to adjust proportionally */
     object-fit: cover; /* Ensure the image covers the entire container */
 }
-
-.full-width {
-    width: 100%;
-    height: auto; /* Adjust for smaller screens */
-}
-
-
-
