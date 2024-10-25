@@ -224,6 +224,14 @@ background-repeat: no-repeat; /* Do not repeat the background image */
 z-index: 0; /* Ensure the background image is behind other content */
 }
 
+.bigbox2 p {
+    font-size: clamp(16px, 2vw, 24px); /* Scales font between 16px and 24px based on screen width */
+    letter-spacing: 0.1em; /* Adjust as needed */
+    line-height: 1.6; /* Improves readability with a balanced line height */
+    text-align: justify;
+    margin-right: 20px;
+    padding: 0 10px; /* Adds padding to prevent text from touching the edges */
+}
 
 .section {
     display: flex;
