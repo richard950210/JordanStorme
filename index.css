@@ -136,7 +136,7 @@ h1 {
     position: relative; /* Ensure positioning context for absolutely positioned children */
     overflow: hidden; /* Hide any overflow content */
     border-radius: 20px; /* Add curved edges */
-    background-image: url('../Front_10.png'); /* Set the background image */
+    background-image: url('../1.png'); /* Set the background image */
     background-size: cover; /* Cover the entire box with the background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
@@ -201,7 +201,7 @@ h1 {
     position: relative; /* Ensure positioning context for absolutely positioned children */
     overflow: hidden; /* Hide any overflow content */
     border-radius: 20px; /* Add curved edges */
-    background-image: url('../J&S_bg_020.png'); /* Set the background image */
+    background-image: url('../2.png'); /* Set the background image */
     background-size: cover; /* Cover the entire box with the background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
@@ -234,7 +234,7 @@ h1 {
     position: relative; /* Ensure positioning context for absolutely positioned children */
     overflow: hidden; /* Hide any overflow content */
     border-radius: 20px; /* Add curved edges */
-    background-image: url('../J&S_bg_030.png'); /* Set the background image */
+    background-image: url('../3.png'); /* Set the background image */
     background-size: cover; /* Cover the entire box with the background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
