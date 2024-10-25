@@ -145,7 +145,9 @@ h1 {
     margin: 20px auto;
     text-align: center;
     width: 90%; /* Ensure the div fills its parent container */
-    height: 100%; /* Ensure the div fills its parent container */
+    height: auto; /* Ensure the div fills its parent container */
+    max-height: 80vh; /* Ensures images don't exceed 80% of the viewport height */
+    object-fit: contain; /* Keeps aspect ratio within container without cropping */
     position: relative; /* Ensure positioning context for absolutely positioned children */
     overflow: hidden; /* Hide any overflow content */
     border-radius: 20px; /* Add curved edges */
@@ -203,22 +205,24 @@ h1 {
 
 /*Story Section*/
 .bigbox2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-	margin: 20px auto;
-    text-align: center;
-    width: 90%; /* Ensure the div fills its parent container */
-    height: 100%; /* Ensure the div fills its parent container */
-    position: relative; /* Ensure positioning context for absolutely positioned children */
-    overflow: hidden; /* Hide any overflow content */
-    border-radius: 20px; /* Add curved edges */
-    background-image: url('/img/2.png'); /* Set the background image */
-    background-size: cover; /* Cover the entire box with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    z-index: 0; /* Ensure the background image is behind other content */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+margin: 20px auto;
+text-align: center;
+width: 90%; /* Ensure the div fills its parent container */
+height: auto; /* Ensure the div fills its parent container */
+max-height: 80vh; /* Ensures images don't exceed 80% of the viewport height */
+object-fit: contain; /* Keeps aspect ratio within container without cropping */
+position: relative; /* Ensure positioning context for absolutely positioned children */
+overflow: hidden; /* Hide any overflow content */
+border-radius: 20px; /* Add curved edges */
+background-image: url('/img/2.png'); /* Set the background image */
+background-size: cover; /* Cover the entire box with the background image */
+background-position: center; /* Center the background image */
+background-repeat: no-repeat; /* Do not repeat the background image */
+z-index: 0; /* Ensure the background image is behind other content */
 }
 
 
@@ -238,18 +242,19 @@ h1 {
 /*RSVP Section*/
 
 .bigbox3 {
-
-    padding: 10px;
-    margin: 20px auto;
-    text-align: center;
-    width: 90%; /* Ensure the div fills its parent container */
-    height: 100%; /* Ensure the div fills its parent container */
-    position: relative; /* Ensure positioning context for absolutely positioned children */
-    overflow: hidden; /* Hide any overflow content */
-    border-radius: 20px; /* Add curved edges */
-    background-image: url('/img/3.png'); /* Set the background image */
-    background-size: cover; /* Cover the entire box with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    z-index: 0; /* Ensure the background image is behind other content */
+padding: 10px;
+margin: 20px auto;
+text-align: center;
+width: 90%; /* Ensure the div fills its parent container */
+height: auto; /* Ensure the div fills its parent container */
+max-height: 80vh; /* Ensures images don't exceed 80% of the viewport height */
+object-fit: contain; /* Keeps aspect ratio within container without cropping */
+position: relative; /* Ensure positioning context for absolutely positioned children */
+overflow: hidden; /* Hide any overflow content */
+border-radius: 20px; /* Add curved edges */
+background-image: url('/img/3.png'); /* Set the background image */
+background-size: cover; /* Cover the entire box with the background image */
+background-position: center; /* Center the background image */
+background-repeat: no-repeat; /* Do not repeat the background image */
+z-index: 0; /* Ensure the background image is behind other content */
 }
