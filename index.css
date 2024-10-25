@@ -146,7 +146,6 @@ h1 {
     text-align: center;
     width: 90%; /* Ensure the div fills its parent container */
     height: auto; /* Ensure the div fills its parent container */
-    max-height: 80vh; /* Ensures images don't exceed 80% of the viewport height */
     object-fit: contain; /* Keeps aspect ratio within container without cropping */
     position: relative; /* Ensure positioning context for absolutely positioned children */
     overflow: hidden; /* Hide any overflow content */
