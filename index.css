@@ -1,308 +1,77 @@
-body {
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    font-family: Moneta, Arial, sans-serif;
-    background-color: #050505;
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    margin: 0;
 }
 
-.section:nth-child(1) {
-    background-image: url("Wedding E-RSVP/Front 1.jpg");
-    background-size: cover;
-    background-position: center;
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-.section:nth-child(2) {
-    background-image: url("image2.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.section:nth-child(3) {
-    background-image: url("image3.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-/* Jordan And Andrea Storme's Special Day */
-h1 {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-family: 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico', 'Lobster Two', 'Dancing Script', Arial, sans-serif;
-    white-space: nowrap; /* Prevent wrapping of text */
-    overflow: hidden; /* Hide any overflow text */
-    text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
-    font-size: 7vw; /* Set a base font size */
-}
-
-/* Media Query for screens smaller than 768px (tablets and mobile devices) */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 5vw; /* Scale down the header */
-    }
-
-    .box {
-        flex: 1 0 100%; /* Make each box take full width on small screens */
-        padding: 10px; /* Reduce padding for smaller screens */
-    }
-
-    .bigbox1, .bigbox2, .bigbox3 {
-        width: 100%; /* Make the boxes fill the screen width */
-        padding: 10px;
-        margin: 10px auto;
-        height: auto; /* Allow the height to adjust naturally */
-    }
-
-    .container-clock .countdown-box {
-        width: 45px; /* Shrink the countdown boxes */
-        height: 45px;
-    }
-
-    .countdown-item {
-        font-size: 5vw; /* Smaller text for countdown numbers */
-    }
-
-    .countdown-label {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 4vw; /* Adjust further for mobile phones */
-    }
-
-    p {
-        font-size: 3vw;
-    }
-
-    .date {
-        font-size: 4vw;
-    }
-}
-
-/* Small Container */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/* Consolidated full-width class */
+/* Responsive Image Scaling */
 .full-width {
-    position: absolute; /* Position the image absolutely within the parent */
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%; /* Ensure full container height */
-    object-fit: cover; /* Scale the image while preserving its aspect ratio */
-    opacity: 0.7; /* Set transparency for the image */
-    z-index: -1; /* Ensure the image is behind other content */
+    height: auto;
 }
 
-.box {
-    flex: 1 0 45%;
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0);
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    border-radius: 20px;
+.background-image {
+    height: 100vh;
+    object-fit: cover;
 }
 
-.box .left1 {
-    float: left;
-    width: 100%;
-    margin-right: 5%;
-}
-
-.box .right {
-    float: right;
-    width: 100%;
-}
-
-.box h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #000000;
-}
-
-.box p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-.box i {
-    font-size: 36px;
-    color: #ffffff;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.box .countdown {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.box .date {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.box .address {
-    font-size: 18px;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.box .map {
-    width: 100%;
-    height: 200px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-}
-
-/* First Big Box Section */
-.bigbox1 {
-    padding: 10px;
-    margin: 20px auto;
-    text-align: center;
-    width: 90%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    background-image: url('/img/1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
-
-/* Countdown CSS Section */
+/* Countdown Section */
 .container-clock {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .countdown-box {
     text-align: center;
-    border: 2px solid #CB6843;
-    border-radius: 10px;
     padding: 10px;
-    margin: 5px;
+    border-radius: 8px;
 }
 
-.countdown-item {
-    font-size: 8vw;
-    font-weight: bold;
+/* Box and Text Styling */
+.bigbox1, .bigbox2, .bigbox3 {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
 }
 
-.countdown-label {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #000000;
+/* Responsive Text Adjustments */
+h2 {
+    font-size: 5vw;
 }
 
-/* Background Pictures */
-.background-sections {
-    position: relative;
+.story-text {
+    font-size: 4vw;
+    text-align: justify;
+}
+
+.rsvp-button button {
     width: 100%;
-    overflow: hidden;
+    max-width: 300px;
+    padding: 1em;
+    font-size: 16px;
+    background-color: #1c7a5b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.top-section {
-    z-index: 1; /* Ensure the top section is in front */
+@media screen and (max-width: 768px) {
+    .countdown-box .countdown-item {
+        font-size: 5vw;
+    }
 }
 
-.bottom-section {
-    z-index: -1; /* Ensure the bottom section is behind other content */
-    opacity: 0.7;
-}
-
-/* Story Section */
-.bigbox2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    margin: 20px auto;
-    text-align: center;
-    width: 90%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    background-image: url('/img/2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
-
-.section {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1200px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-}
-
-/* RSVP Section */
-.bigbox3 {
-    padding: 10px;
-    margin: 20px auto;
-    text-align: center;
-    width: 90%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    background-image: url('/img/3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
-
-/* Image Styles */
-img {
-    width: 100%; /* Ensure the image width scales to fit its container */
-}
-
-/*Butons for plantation Google Maps Location*/
-.image-button {
-  border: none;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-
-.button-image {
-  width: 100%;
-  height: 600px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-
-
-
-    
-    height: auto; /* Allow height to adjust proportionally */
-    object-fit: cover; /* Ensure the image covers the entire container */
+@media screen and (max-width: 480px) {
+    h2, .countdown-item, .story-text {
+        font-size: 6vw;
+    }
 }
