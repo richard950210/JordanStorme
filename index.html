@@ -92,7 +92,17 @@
     <!--Story Section-->
     <div class="section">
 <div class="box" style="height: fit-content; min-height: 900px; max-height: 1000px; display: flex; justify-content: center; align-items: center;">
-                    <img src="/img/Our Love Story-01.png" style="max-width: 120%; height: auto; margin-top: -30px; border-radius: 20px; object-fit: cover;" alt="Love Story">
+               <!--     <img src="/img/Our Love Story-01.png" style="max-width: 120%; height: auto; margin-top: -30px; border-radius: 20px; object-fit: cover;" alt="Love Story"> -->
+
+	<!-- Image with click functionality for full-screen view -->
+<div onclick="openFullScreenImage('/img/Our Love Story-01.png')" style="cursor: pointer;">
+    <img src="/img/Our Love Story-01.png" style="max-width: 120%; height: auto; margin-top: -30px; border-radius: 20px; object-fit: cover;" alt="Love Story">
+</div>
+
+<!-- Full-screen modal to display image -->
+<div id="fullScreenModal" onclick="closeFullScreenImage()">
+    <img id="modalImage" src="" alt="Love Story Full View">
+</div>
         <div>
 <!--                <p style="font-size: clamp(16px, 2vw, 24px); /* Scale font size between 16px and 24px */
     letter-spacing: 0.1em;line-height: 1.6;
@@ -193,6 +203,22 @@ const formatTime = (time) => {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+
+
+
+function openFullScreenImage(imageSrc) {
+    const modal = document.getElementById("fullScreenModal");
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = imageSrc; // Set the source of the full-screen image
+    modal.style.display = "flex"; // Show the modal
+}
+
+function closeFullScreenImage() {
+    document.getElementById("fullScreenModal").style.display = "none"; // Hide the modal
+}
+
+
+	
 </script>
 
 
