@@ -1,20 +1,52 @@
-/* Mobile-specific adjustments */
 @media screen and (max-width: 768px) {
-.bigbox1 img {
-        max-height: 60vh; /* Smaller height on smaller screens if needed */
-    }
-.bigbox2 img {
-        max-height: 60vh; /* Smaller height on smaller screens if needed */
-    }
-.bigbox3 img {
-        max-height: 60vh; /* Smaller height on smaller screens if needed */
-    }
-.h1 {
-        font-size: 3vw; /* Reduce font size for smaller screens */
+    .bigbox1, .bigbox2, .bigbox3 {
+        width: 95%; /* Slightly reduce width on mobile */
+        padding: 10px; /* Maintain padding */
     }
 
+    /* Center images and adjust height */
+    .bigbox1 img, .bigbox2 img, .bigbox3 img {
+        max-width: 100%; /* Make images responsive */
+        height: auto;
+    }
 
+    /* Adjust text size for smaller screens */
+    h1, h2, p, .countdown-item {
+        font-size: calc(10px + 1.5vw); /* Dynamically resize text */
+    }
+
+    /* Countdown layout adjustment */
+    .container-clock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .countdown-box {
+        margin-bottom: 10px; /* Separate boxes on mobile */
+    }
+
+    /* Center content in sections */
+    .box {
+        flex: 1 1 100%; /* Take full width on mobile */
+        padding: 10px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    /* Adjust story section for readability */
+    .bigbox2 p {
+        font-size: calc(12px + 1vw); /* Responsive font size for story */
+        padding: 0 5px; /* Reduce padding on mobile */
+    }
+    
+    /* RSVP button size adjustment */
+    .bigbox3 button {
+        width: 90%; /* Make button take full width on mobile */
+        height: 50px;
+    }
 }
+
+
 
 body {
 	overflow-x: hidden; /* Prevent horizontal overflow */
