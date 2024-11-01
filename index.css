@@ -15,15 +15,6 @@
         font-size: calc(10px + 1.5vw); /* Dynamically resize text */
     }
 
-    /* Countdown layout adjustment */
-    .container-clock {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .countdown-box {
-        margin-bottom: 10px; /* Separate boxes on mobile */
-    }
 
     /* Center content in sections */
     .box {
