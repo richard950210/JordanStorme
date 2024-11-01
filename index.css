@@ -190,6 +190,7 @@ h1 {
     position: relative;
     width: 100%;
     overflow: hidden;
+	
 }
 
 .top-section {
@@ -199,6 +200,7 @@ h1 {
 .bottom-section {
     z-index: -1; /* Ensure the bottom section is behind other content */
 	opacity: 0.7;
+	background-color:#F5F5DC;
 }
 
 
