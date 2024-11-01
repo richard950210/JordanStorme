@@ -205,19 +205,16 @@ setInterval(updateCountdown, 1000);
 
 
 
-
 function openFullScreenImage(imageSrc) {
     const modal = document.getElementById("fullScreenModal");
     const modalImage = document.getElementById("modalImage");
-    modalImage.src = imageSrc; // Set the source of the full-screen image
-    modal.style.display = "flex"; // Show the modal
+    modalImage.src = imageSrc;
+    modal.style.display = "flex";
 }
 
 function closeFullScreenImage() {
-    document.getElementById("fullScreenModal").style.display = "none"; // Hide the modal
+    document.getElementById("fullScreenModal").style.display = "none";
 }
-
-
 	
 </script>
 
