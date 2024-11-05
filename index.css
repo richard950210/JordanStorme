@@ -96,7 +96,7 @@ h1 {
     white-space: nowrap; /* Prevent wrapping of text */
     overflow: hidden; /* Hide any overflow text */
     text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
-    font-size: 7vw; /* Set a base font size */
+    font-size: 50vw; /* Set a base font size */
 
 }
 
