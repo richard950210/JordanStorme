@@ -15,7 +15,19 @@
         font-size: calc(10px + 1.5vw); /* Dynamically resize text */
     }
 
-
+.h4 { 
+text-align: left; color: #800020; 
+margin-bottom: 0px;
+margin-top: 0px; 
+font-family: 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico', 'Lobster Two', 'Dancing Script', Arial, sans-serif;
+white-space: nowrap; 
+/* Prevent wrapping of text */ 
+overflow: hidden; 
+/* Hide any overflow text */ 
+text-overflow: ellipsis;
+/* Display ellipsis (...) if text overflows */ 
+font-size: 12vw; /* Set a base font size */ 
+}
     /* Center content in sections */
     .box {
         flex: 1 1 100%; /* Take full width on mobile */
