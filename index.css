@@ -24,17 +24,38 @@
         text-align: center;
     }
 
+
+	
+    /* RSVP button size adjustment */
+    .bigbox3 button {
+        width: 90%; /* Make button take full width on mobile */
+        height: 50px;
+    }
+
+
+	.bigbox2 img { 
+max-width: 100%; 
+height: auto; 
+margin: 0 auto; 
+float: none; 
+} 
+
+	.bigbox2 p { 
+	font-size: clamp(14px, 2vw, 20px); 
+	margin-right: 0;
+	padding: 0 10px; 
+	} 
+	
+	.section { 
+	flex-direction: column; 
+	align-items: center; 
+	}
     /* Adjust story section for readability */
     .bigbox2 p {
         font-size: calc(12px + 1vw); /* Responsive font size for story */
         padding: 0 5px; /* Reduce padding on mobile */
     }
     
-    /* RSVP button size adjustment */
-    .bigbox3 button {
-        width: 90%; /* Make button take full width on mobile */
-        height: 50px;
-    }
 }
 
 #fullScreenModal {
