@@ -94,7 +94,7 @@ float: none;
 
 body {
 	overflow-x: hidden; /* Prevent horizontal overflow */
-	font-family: Arial, sans-serif;
+	font-family: 'Spectral', 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico', 'Lobster Two', 'Dancing Script';
 	background-color: #F5F5DC;
 	padding: 0px;
 	margin: 0;
@@ -183,9 +183,12 @@ h1 {
 	margin: 0;
 	font-size: 18px;
 	line-height: 1.5;
+	font-family: 'Spectral', 'Dancing Script';
+
 }
 .box i {
 	font-size: 36px;
+	font-family: 'Spectral', 'Dancing Script';
 	color: #ffffff;
 	margin-bottom: 20px;
 	display: block;
@@ -309,6 +312,8 @@ z-index: 0; /* Ensure the background image is behind other content */
     text-align: justify;
     margin-right: 20px;
     padding: 0 10px; /* Adds padding to prevent text from touching the edges */
+	font-family: 'Spectral', 'Dancing Script';
+
 }
 
 .section {
