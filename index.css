@@ -13,6 +13,8 @@
     /* Adjust text size for smaller screens */
     h1, h2, p, .countdown-item {
         font-size: calc(10px + 1.5vw); /* Dynamically resize text */
+	font-family: 'Montserrat', sans-serif; /* Default font */
+
     }
 
 
@@ -21,7 +23,7 @@ text-align: left;
 color: #800020; 
 margin-bottom: 20px;
 margin-top: -60px; 
-font-family: 'Spectral', 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico', 'Lobster Two', 'Dancing Script';
+  font-family: 'Montserrat', sans-serif; /* Default font */
 white-space: nowrap; /* Prevent wrapping of text */ 
 overflow: hidden; /* Hide any overflow text */ 
 text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */ 
@@ -124,7 +126,7 @@ h1 {
 	color: #ffffff;
 	margin-bottom: 0px;
     margin-top: 0px;
-    font-family: 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico',  'Lobster Two', 'Dancing Script', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Default font */
     white-space: nowrap; /* Prevent wrapping of text */
     overflow: hidden; /* Hide any overflow text */
     text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
@@ -178,6 +180,7 @@ h1 {
 	margin-top: 0;
 	margin-bottom: 20px;
 	color: #000000;
+	
 }
 .box p {
 	margin: 0;
@@ -355,7 +358,7 @@ h4 {
 	color: #800020;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	font-family: 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico',  'Lobster Two', 'Dancing Script', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Default font */
 	white-space: nowrap; /* Prevent wrapping of text */
 	overflow: hidden; /* Hide any overflow text */
 	text-overflow: ellipsis;
@@ -369,7 +372,7 @@ h5 {
 	color: #B2AC88;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	font-family: 'Zilla Slab Highlight', 'Pacifico',  'Lobster Two', 'Dancing Script', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Default font */
 	white-space: nowrap; /* Prevent wrapping of text */
 	overflow: hidden; /* Hide any overflow text */
 	text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
