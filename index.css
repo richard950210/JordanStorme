@@ -15,12 +15,13 @@
         font-size: calc(10px + 1.5vw); /* Dynamically resize text */
     }
 
+
 .h4 { 
 text-align: left; 
 color: #800020; 
 margin-bottom: 20px;
 margin-top: -60px; 
-font-family: 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico', 'Lobster Two', 'Dancing Script';
+font-family: 'Spectral', 'Brush Script MT', 'Zilla Slab Highlight', 'Pacifico', 'Lobster Two', 'Dancing Script';
 white-space: nowrap; /* Prevent wrapping of text */ 
 overflow: hidden; /* Hide any overflow text */ 
 text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */ 
