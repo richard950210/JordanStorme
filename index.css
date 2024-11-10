@@ -81,7 +81,7 @@ float: none;
     background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1; /* Ensures it stays above other elements */
     cursor: pointer;
 }
 
