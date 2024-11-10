@@ -33,7 +33,7 @@ font-size: 6vw; /* Set a base font size */
     .box {
         flex: 1 1 100%; /* Take full width on mobile */
         padding: 10px;
-        margin: 10px auto;
+        margin: 0px auto;
         text-align: center;
     }
 
